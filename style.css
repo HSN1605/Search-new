@@ -1,0 +1,69 @@
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+body {
+    font-size: 20pt;
+    background: ghostwhite;
+    font-family: 'Courier New', Courier, monospace;
+}
+.search{
+  width: 50%;
+  height: 35px;
+  display: block;
+  margin: 0 auto 0 auto;
+  font-family: cursive;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+input[type="text"]:hover {
+  font-family: monospace;
+}
+#title{
+  font-weight: bold;
+}
+.card{
+  width:95%;
+  min-height: 300px;
+  max-height: auto;
+  display: block;
+  margin: 7px auto 7px auto;
+  background: hsla(220, 100%, 70%, .3);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px ;
+  box-shadow: 0 1px 20px 1.5px black;
+}
+@keyframes animateBoxS{
+  0%{box-shadow: 0 1px 20px 1.5px black}
+  
+  100%{box-shadow: -4px 4px 10px 2px black}
+}
+
+.card:hover{
+  box-shadow: -4px 4px 6px 2px;
+  animation: animateBoxS .2s linear 1;
+}
+.profile{
+  border-radius: 50%;
+  display: block;
+  margin:0 auto 0 auto;
+  position: relative;
+  top: 5px;
+}
+
+.card > div{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 2px;
+  word-wrap: break-word;
+  font-weight: bolder;
+  margin-left: 10px;
+  word-break: break-all;
+  font-size: 1.2rem;
+}
+
+.hide{
+  display: none;
+  visibility: hidden;
+}
+
